@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace konsola
 {
-    public struct FilmClass
+    public struct Albumclass
     {
         public string Artist {  get; set; }
         public string Album { get; set; }
@@ -14,7 +14,7 @@ namespace konsola
         public int year { get; set; }
         public int downloadNumber { get; set; }
 
-        public FilmClass()
+        public Albumclass()
         {
 
         }

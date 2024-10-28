@@ -20,9 +20,25 @@
                 }
 
                 for(int i = 0; i < updateLines.Count; i+=5) {
-                    
+                    try
+                    {
+                        Albumclass newAlbum = new Albumclass
+                        {
+                            Artist = updateLines[i],
+                            Album = updateLines[i + 1],
+                            songsNumber = int.Parse(updateLines[i + 2]),
+                            year = int.Parse(updateLines[i + 3]),
+                            downloadNumber = int.Parse(updateLines[i + 4])
+                        };
+                        listAlbum.Add(newAlbum);
+                    }
+                    catch(Exception e)
+                    {
+                        Console.WriteLine($"Błąd : {e.Message}");
+                    }
                 }
             }
+            return listAlbum;
         }
 
 

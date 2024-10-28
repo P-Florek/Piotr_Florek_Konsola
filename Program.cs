@@ -54,5 +54,14 @@
             Program program = new Program();
             program.Display(program.GetPatchTxt());
         }
+
+        /**********************************************
+        nazwa funkcji: GetPatchTxt()
+        opis funkcji: Funkcja sprawdza poprawność pliku i przypisuje konkretne linie do konkretnej zmiennej struktury AlbumClass , w razie błędu zwraca dany błąd .
+                      Końcowy efekt zapisany jest w Liscie listAlbum.
+        parametry: patch - wykorzystywany do wpisania lokalizacji pliku
+        zwracany typ i opis: Zwracana jest Lista ListAlbum - zawiera gotowy do wypisania plik w konsoli z przypisanymi liniami do zmiennych struktury AlbumClass
+        autor: Piotr Florek
+        ***********************************************/
     }
 }

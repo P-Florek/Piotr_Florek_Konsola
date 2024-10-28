@@ -41,10 +41,17 @@
             return listAlbum;
         }
 
+        public void Display(List<Albumclass> listAlbum)
+        {
+            foreach(var album in listAlbum)
+            {
+                Console.WriteLine($"Autor : {album.Artist}, \nAlbum : {album.Album}, \nSongs Number : {album.songsNumber}, \nYear : {album.year}, \nDownload number : {album.downloadNumber}");
+            }
+        }
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            
         }
     }
 }
